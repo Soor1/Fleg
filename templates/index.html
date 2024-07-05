@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fleg Family Tree</title>
-    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 <body>
@@ -13,10 +13,20 @@
         <button id="search-button" class="search-button">
             <i class="uil uil-search"></i>
         </button>
-        
-        <input type="text" placeholder="Search here..." />
-        <button class="button">Filters</button>
+        <input type="text" id="search-input" placeholder="Search here..." />
+        <div class="dropdown">
+            <button class="dropbtn">Search By</button>
+            <div class="dropdown-content">
+                <a href="#" data-search="all">All Fields</a>
+                <a href="#" data-search="name">Name</a>
+                <a href="#" data-search="family">Family</a>
+                <a href="#" data-search="year">Year</a>
+                <a href="#" data-search="major">Major</a>
+                <a href="#" data-search="minor">Minor</a>
+            </div>
+        </div>
     </div>
+    <div id="results"></div>
     <script src="/static/js/script.js"></script>
 </body>
 </html>
