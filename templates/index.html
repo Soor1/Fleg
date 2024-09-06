@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Fleg Alumni Database</title>
+        <link rel="stylesheet" href="../static/css/index.css" />
+    </head>
+    <body>
+        <div class="main-container">
+            <h1>Fleg Alumni Database</h1>
+            <div class="search-container">
+                <select id="filter-dropdown">
+                    <option disabled selected hidden>Search By</option>
+                    <option value="name">Name</option>
+                    <option value="family">Family</option>
+                    <option value="year">Year</option>
+                    <option value="major">Major</option>
+                    <option value="committee">Committee</option>
+                </select>
+                <input
+                    type="text"
+                    id="search-bar"
+                    name="search-bar"
+                    placeholder="Type search parameter here..."
+                />
+                <button type="button" id="search-button">Search</button>
+            </div>
+        </div>
+
+        <script src="../static/js/index.js"></script>
+    </body>
+</html>
